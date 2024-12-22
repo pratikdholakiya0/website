@@ -7,11 +7,13 @@
     color: #000;
     font-family: poppins;
 }
+html {
+  font-size: 62.5%;
+}
 body{
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
-
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -27,31 +29,30 @@ body{
 ::-webkit-scrollbar-track{
     background: #b3d2ff;
 }
-
 .nav-container{
-    height: 10vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1.1rem 3.8rem;
 }
 .nav-container .logo img{
-    width: 12.5rem;
-    margin: 1.1rem;
+    width: 20rem;
+    margin: 1rem 5rem;
 }
 .navbar{
     text-transform: uppercase;
     font-weight: 600;
+    padding: 3rem;
 }
 .navbar ul{
     display: flex;
     align-items: center;
-    margin: 1.1rem;
 }
 .navbar ul li a{
-    padding:  1rem 2rem;
+    padding:  1rem 1rem;
     font-weight: 600;
+    font-size: 1.4rem;
     letter-spacing: 0.9px;
     transition: all 0.5s;
     position: relative;
@@ -76,27 +77,29 @@ body{
     display: flex;  
     justify-content: center;
     flex-direction: column;  
-    padding: 3.1rem;
+    padding: 3rem;
     line-height: 1.56;
 }
 .home-container span{
     color: rgb(0, 59, 153);
     font-weight: 700;
+    font-size: 1.5rem;
     letter-spacing: 0.4rem;
 }
 .home-container h1{
     font-family: jost;
-    font-size: 3rem;
+    font-size: 5rem;
     color: rgb(0, 59, 153);
 }
 .home-container p{
     color: #fff;
+    font-size: 1.5rem;
     letter-spacing: 1.728px;
 }
 
 .home-container button{
-    width: 10rem;
-    padding: 15px 20px;
+    width: 20rem;
+    padding: 1.5rem 3rem;
     color: #fff;
     letter-spacing: 1.728px;
     font-size: 14px;
@@ -111,9 +114,9 @@ body{
 .home-image{
     width: 50%;
     aspect-ratio: 1;
-    background-image: url(images/main-hero1.webp);
-    background-size: 100% 100%;
-    margin: 60px;
+    background: url(images/main-hero1.webp) no-repeat;
+    background-size: 90%;
+    margin: 6rem;
     transform: rotateY(180deg);
     animation: main 0.3s linear 0s 1;
 }
@@ -133,31 +136,30 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 3rem 3rem 1.5rem 3rem;
+    flex-wrap: wrap;
 }
 .heading{
     width: 100%;
-    height: 20vh;
     font-weight: 400;
     letter-spacing: 1.768px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    padding: 4rem;
 }
 .heading h2{    
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .heading span{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .boxs{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    flex-wrap: wrap;
+    padding: 40px 0;
 }
 
 .box{
@@ -179,6 +181,7 @@ body{
     background-image: linear-gradient(90deg, #cfd9df 0%, #e2ebf0 100%);
     transition: all 1s;
 }
+
 .box .image:hover{
     background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%);
     transform: rotateZ(360deg);
@@ -190,22 +193,24 @@ body{
 }
 .box h4{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .box span{
     letter-spacing: 1.768px;
+    font-size: 1.3rem;
     margin: 30px;
 }
 
 .services{
     width: 100%;
     height: auto;
-    padding: 6rem;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background: #F7FCFF;
     gap: 10px;
+    font-size: 1.43rem;
 }
 .services-about h2{
     font-size: 2rem;
@@ -219,26 +224,27 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 10rem;
     gap: 1rem;
 }
 
 .services-container .box{
-    width: 19rem;
-    aspect-ratio: 1;
+    width: 30rem;
+    height: auto;
     text-align: start;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #F7FCFF;
     border-radius: 0.6rem;
+    padding: 3rem;
 }
 .services-container .box:hover{
     filter: drop-shadow(10px 10px 10px rgb(237, 237, 237));
     cursor: pointer;
 }
 .image-container--service {
-    width: 4.8rem;
+    max-width: 10rem;
     aspect-ratio: 1;
     display: grid;
     place-items: center;
@@ -251,7 +257,7 @@ body{
 .blog{
     width: 100%;
     height: auto;
-    padding: 3rem 5rem;
+    padding: 5rem 8rem;
 }
 .blog-about{
     height: 10vh;
@@ -262,14 +268,15 @@ body{
     align-items: center;
 }
 .info-blog--data{
-    width: 250px;
+    width: 35rem;
     height: 30vh;
+    font-size: 1.5rem;
 }
 .no1{
     text-align: end;
 }
 .image-container--blog{
-    min-width: 310px;
+    min-width: 31rem;
     aspect-ratio: 0.5;
     background-image: url(images/mobile.png);
     background-size: contain;
@@ -289,7 +296,7 @@ body{
     position: relative;
 }
 .no1 .info{
-    translate: 207px 0;
+    translate: 32rem 0;
 }
 .contact-us{
     width: 70%;
@@ -343,7 +350,103 @@ body{
     width: 100%;
     height: 60vh;
     background: #000;
+    font-size: 1.5rem;
 }
 .footer a{
     color: #fff;
+}
+
+@media (width <= 1100px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html {
+      font-size: 54%;
+    }
+    .blog{
+
+        & .info-about--image{
+            padding: 0;
+            margin: 0;
+
+            .image-container--blog{
+                display: none;
+            }
+        }
+        & .no1{
+            text-align: start;
+
+            & .info-blog--data .info{
+                translate: 0;
+            }
+        }
+    }
+}
+@media (width <= 750px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html {
+      font-size: 44%;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .home{
+        height: auto;
+        flex-direction: column-reverse;
+
+        .home-container{
+            padding: 0rem;
+        }
+        & .image{
+            background-size: 100%;
+        }
+        & span {
+            font-size: 1.2rem;
+        }
+        & h1 {
+            font-size: 4rem;
+        }
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+    /* .blog{
+        & .info-about--image{
+            flex-direction: column;
+            padding: 0;
+            margin: 10px;
+
+            & .info-blog--data{
+                text-align: start;
+            }
+
+            & .info{
+                translate: 0;
+                margin: 10px;
+            }
+        }
+    } */
+}
+
+@media (width <= 600px) {
+    .blog{
+        & .info-about--image{
+            flex-direction: column;
+            padding: 0;
+            margin: 10px;
+
+            & .info-blog--data{
+                text-align: start;
+            }
+
+            & .info{
+                translate: 0;
+                margin: 10px;
+            }
+        }
+    }
 }
