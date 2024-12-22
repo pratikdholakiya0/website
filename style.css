@@ -65,11 +65,12 @@ body{
 }
 .home{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(to top right, #3d86fa, #4484fb, #679eff, #b3d2ff, #ebf3fe);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
 .home-container{
     width: 50%;
