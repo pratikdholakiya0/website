@@ -253,7 +253,7 @@ body{
 .blog{
     width: 100%;
     height: auto;
-    padding: 5rem 8rem;
+    padding: 5rem 8rem 0rem 8rem;
     display: flex;
     flex-direction: column;
 }
