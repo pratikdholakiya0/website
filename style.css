@@ -70,7 +70,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 .home-container{
     width: 50%;
@@ -210,7 +209,6 @@ body{
     justify-content: center;
     flex-direction: column;
     background: #F7FCFF;
-    gap: 10px;
     font-size: 1.43rem;
 }
 .services-about h2{
@@ -226,19 +224,16 @@ body{
     align-items: center;
     flex-wrap: wrap;
     padding-top: 10rem;
-    gap: 1rem;
 }
 
 .services-container .box{
     width: 30rem;
-    height: auto;
     text-align: start;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #F7FCFF;
     border-radius: 0.6rem;
-    padding: 3rem;
 }
 .services-container .box:hover{
     filter: drop-shadow(10px 10px 10px rgb(237, 237, 237));
@@ -259,6 +254,8 @@ body{
     width: 100%;
     height: auto;
     padding: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
 }
 .blog-about{
     height: 10vh;
@@ -267,6 +264,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 .info-blog--data{
     width: 35rem;
@@ -366,7 +364,6 @@ body{
       font-size: 54%;
     }
     .blog{
-
         & .info-about--image{
             padding: 0;
             margin: 0;
@@ -374,6 +371,10 @@ body{
             .image-container--blog{
                 display: none;
             }
+        }
+        & .info-blog--data{
+            padding: 0.1rem;
+            margin: 0.1rem;
         }
         & .no1{
             text-align: start;
@@ -435,6 +436,10 @@ body{
 
 @media (width <= 600px) {
     .blog{
+
+        & .blog-about{
+            gap: 0px;
+        }
         & .info-about--image{
             flex-direction: column;
             padding: 0;
