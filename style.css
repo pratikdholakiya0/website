@@ -234,6 +234,7 @@ body{
     align-items: center;
     background: #F7FCFF;
     border-radius: 0.6rem;
+    padding: 5rem 0 0 0;
 }
 .services-container .box:hover{
     filter: drop-shadow(10px 10px 10px rgb(237, 237, 237));
