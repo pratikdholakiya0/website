@@ -270,7 +270,7 @@ body{
 }
 .info-blog--data{
     width: 35rem;
-    height: 30vh;
+    aspect-ratio: 2;
     font-size: 1.5rem;
 }
 .no1{
