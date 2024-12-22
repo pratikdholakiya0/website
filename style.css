@@ -173,8 +173,8 @@ body{
     gap: 10px;
 }
 .box .image{
-    width: 9rem;
-    aspect-ratio: 1;
+    width: 12rem;
+    height: 12rem;
     display: grid;
     place-items: center;
     border-radius: 50%;
